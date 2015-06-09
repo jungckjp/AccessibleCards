@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PpW-r2-8Xn" customClass="CardView">
+                                <rect key="frame" x="322" y="250" width="50" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="Deck of Cards">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="I8G-1c-EH5"/>
+                                    <constraint firstAttribute="height" constant="100" id="Shr-yN-hsP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o91-qx-l5K" customClass="DiscardPileView">
+                                <rect key="frame" x="249" y="250" width="50" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="3Xz-eZ-RHd"/>
+                                    <constraint firstAttribute="height" constant="100" id="AhY-Tw-QVe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="o91-qx-l5K" secondAttribute="centerX" constant="41" id="1NJ-ns-UTb"/>
+                            <constraint firstItem="PpW-r2-8Xn" firstAttribute="leading" secondItem="o91-qx-l5K" secondAttribute="trailing" constant="16" id="3qa-6E-Lys"/>
+                            <constraint firstAttribute="centerY" secondItem="o91-qx-l5K" secondAttribute="centerY" id="fEI-PD-64e"/>
+                            <constraint firstAttribute="centerY" secondItem="PpW-r2-8Xn" secondAttribute="centerY" id="x51-H9-cfw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="PpW-r2-8Xn" id="oHE-Lj-wte"/>
+                        <outlet property="discardPile" destination="o91-qx-l5K" id="2N3-cS-Qg2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
