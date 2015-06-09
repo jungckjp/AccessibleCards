@@ -2,8 +2,7 @@
 //  CardView.m
 //  AccessibleCards
 //
-//  Created by Tim Ekl on 2/7/15.
-//  Edited by Jonathan Jungck on 5/12/15.
+//  Created by Jonathan Jungck on 5/12/15.
 //  Copyright (c) 2015 Tim Ekl and Jonathan Jungck. All rights reserved.
 //
 
